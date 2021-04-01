@@ -2,5 +2,5 @@
 
 Desarollada con React + TypeScript, Hooks y custom Hooks, y Local Storage
 
-##Link a página
+## Link a página
 https://covid---app.vercel.app/
