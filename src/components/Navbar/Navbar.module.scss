@@ -1,0 +1,81 @@
+.containerNavbar {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  .containerItems {
+    position: fixed;
+    top: 10px;
+    width: 90%;
+    max-width: 800px;
+    background-color: #487e95;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    z-index: 2;
+    .linkToHome {
+      display: flex;
+      align-items: center;
+      color: white;
+      text-decoration: none;
+      img {
+        width: 50px;
+      }
+      p {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        margin-left: 5px;
+      }
+    }
+    .itemFavorite {
+      width: 90%;
+      max-width: 880px;
+      position: fixed;
+      display: flex;
+      justify-content: space-around;
+      top: 85px;
+      background: transparent;
+      .favorites {
+        width: 250px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 2px solid black;
+        background: #c8d3db;
+        float: right;
+        display: none;
+        .items {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: white;
+          border-radius: 4px;
+          margin: 5px 0;
+          color: black;
+          text-decoration: none;
+          overflow: hidden;
+          img {
+            width: 40px;
+            height: 25px;
+          }
+          p {
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .containerFav,
+    .containerFavStar {
+      cursor: pointer;
+      font-size: 30px;
+    }
+    .containerFavStar {
+      display: none;
+    }
+  }
+}

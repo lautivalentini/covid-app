@@ -1,0 +1,85 @@
+.card {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: 40px 0;
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 10px 10px 1px #c8d3db;
+  .cardTitle {
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    h3 {
+      font-weight: bold;
+      text-align: center;
+      background-color: #f4f5db;
+      color: black;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  }
+  .cardBody {
+    margin: 20px 0;
+    .cases {
+      text-align: center;
+      h4 {
+        color: #23689b;
+        font-size: 30px;
+      }
+      p {
+        font-size: 40px;
+      }
+    }
+    .todayCases {
+      text-align: center;
+      h4 {
+        color: #23689b;
+        font-size: 40px;
+      }
+      p {
+        font-size: 50px;
+      }
+    }
+    .containerBottomCard {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 5px;
+      text-align: center;
+      .recovered,
+      .tests {
+        h5 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 25px;
+          color: #888;
+        }
+      }
+    }
+  }
+  .inputSearchCountry {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    padding: 20px;
+    z-index: 1;
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #888;
+      border-radius: 10px;
+      margin-bottom: 5px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
